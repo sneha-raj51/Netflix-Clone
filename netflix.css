@@ -1,0 +1,239 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: black;
+	color: white;
+
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)) ,url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1280,h_720,q_75,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZjU2MmFhZjQtNWRiYi00NjAzLWEzMmItNmVmNmMyMjMwMTM2XC9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LOYKSxIDqfPwWHR0SSJ-ugGQ6bECF0yO6Cmc0F26CQs');
+	background-size: cover;
+	/*background-position: center ;
+	padding: 10px 8%;
+	position: relative;*/
+}
+h5{
+	border: 3px solid grey;
+	width: 100%;
+}
+.logo{
+	width: 200px;
+	cursor: pointer;
+	padding: 10px;
+	margin-left: 18px;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+nav button{
+	border: 0;
+	outline: 0;
+	background-color: red;
+	padding: 7px 20px ;
+	border-radius: 4px;
+	font-size: 16px;
+	margin-left: 19px;
+	cursor: pointer;
+}
+.signin:hover{
+	background: #dd3124;
+}
+.submit:hover{
+	background: #dd3124;
+}
+.lang{
+	display: inline-flex;
+	align-items: center;
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+	padding: 6px;
+}
+.lang i{
+	margin-left: 4px;
+	color: white;
+}
+.signin{
+	margin-right: 30px;
+}
+.content1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;	
+}
+.content1 h1{
+	font-size: 60px;
+	line-height: 70px;
+	font-weight: 700;
+	max-width: 650px;
+}
+.content1 h3{
+	font-size: 24px;
+	font-weight: 800;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.content1 p{
+	font-size: 20px;
+}
+.sign{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+
+}
+.sign input{
+	flex: 1;
+	border: 0;
+	outline: 0;
+	font-size: 18px;
+	margin-left: 20px;
+	padding: 13px 28px;
+}
+.sign button{
+	border: 0;
+	outline: 0;
+	background: red;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 15px 30px;
+	border-radius: 3px;
+}
+.signin a{
+	text-decoration: none;
+	color: white;
+}
+.features{
+	font-size: 22px;
+	padding: 50px 12%;
+}
+.row{
+	display: flex;
+	align-items: center;
+}
+.text h2{
+	font-size: 50px;
+	margin-bottom: 15px;
+}
+.features img{
+	margin-left: 150px;
+	width: 450px;
+}
+
+.faq{
+	padding: 10px 12%;
+	text-align: center;
+	font-size: 20px;
+}
+.faq h2{
+	font-size: 50px;
+}
+.ques{
+	margin: 60px auto;
+	width: 100%;
+	max-width: 850px;
+
+}
+.ques li{
+	list-style: none;
+	width: 100%;
+	padding: 5px;
+}
+.ques li label{
+	display:flex;
+	align-items: center;
+	padding: 20px;
+	font-size:29px;
+	background: #4d4947 ;
+	margin-bottom:7px;
+	cursor: pointer;
+	
+}
+.ques li label:hover{
+	background: #7a7674 ;
+}
+label::after{
+	content: '+';
+	position: absolute;
+	right: 410px;
+	font-size: 28px;
+}
+input[type="radio"]{
+	display: none;
+}
+.ques .content{
+	background: #4d4947 ;
+	text-align: center;
+	padding: 0 20px;
+	max-height: 0;
+	overflow: hidden;
+	font-size: 20px;
+	transition: max-height 0.5s, padding 0.4s;
+}
+.ques input[type="radio"]:checked + label + .content{
+	max-height: 600px;
+	padding: 30px 20px;
+}
+.ques input[type="radio"]:checked + label::after{
+	transform: rotate(135deg);
+}
+.faq .sign{
+	max-width: 600px;
+	margin: 20px auto 60px;
+}
+.faq small{
+	font-size: 20px;
+}
+.footer{
+	padding: 50px 15% 10px;
+	border-top: 5px solid #4d4947;
+	color: grey;
+}
+.footer h2{
+	font-size: 22px;
+	margin-bottom: 30px;
+
+}
+.footer .text{
+	flex-basis: 25%;
+	flex-flow: 1;
+	margin-bottom: 10px;
+}
+.footer .text a{
+	display: block;
+	
+	margin-bottom: 15px;
+	max-width: 800px;
+	font-size: 19px;
+	text-decoration:none ;
+	color: grey;
+}
+.footer .row{
+	align-items: center;
+	padding: 7px 0;
+}
+.footer .lang {
+	color: grey;
+	border: 1px solid grey;
+}
+.footer .lang i{
+	color: grey;
+}
+.copy{
+	font-size: 19px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
